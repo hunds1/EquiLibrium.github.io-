@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конный клуб EquiLibrium - Школа верховой езды, конные прогулки</title>
+    <meta name="description" content="Школа верховой езды для взрослых и детей. Конные прогулки, иппотерапия, профессиональные тренеры. Запишитесь на пробное занятие!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS будет подключен позже -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Логотип -->
+                <a href="/" class="logo">
+                    <img src="foto/logo_1.png" alt="EquiLibrium Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-title">EquiLibrium</span>
+                        <span class="logo-subtitle">Конный клуб</span>
+                    </div>
+                </a>
+
+                <!-- Навигация -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#services" class="nav-link">Услуги</a></li>
+                        <li><a href="#horses" class="nav-link">Наши лошади</a></li>
+                        <li><a href="#trainers" class="nav-link">Тренеры</a></li>
+                        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Контакты в шапке -->
+                <div class="header-contacts">
+                    <a href="tel:+78005553535" class="phone-link">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>8 (800) 555-35-35</span>
+                    </a>
+                    <button class="btn btn-primary btn-small" id="header-signup-btn">Записаться</button>
+                </div>
+
+                <!-- Мобильное меню (бургер) -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main>
+        <!-- Герой-секция -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Школа верховой езды <span class="highlight">EquiLibrium</span></h1>
+                    <p class="hero-subtitle">Откройте мир общения с лошадьми. Обучение для взрослых и детей, конные прогулки, иппотерапия</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large" id="hero-signup-btn">Записаться на занятие</button>
+                        <a href="#services" class="btn btn-secondary btn-large">Выбрать программу</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">О нашем клубе</h2>
+                    <p class="section-subtitle">Место, где встречаются страсть, природа и гармония</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Конный клуб <strong>EquiLibrium</strong> — это пространство, созданное для всех, кто любит лошадей и хочет научиться искусству верховой езды. Мы находимся в живописном лесном массиве всего в 20 км от города.</p>
+                        <p>Наша философия — гармония между человеком и лошадью. Мы учим не просто ездить верхом, а понимать этих удивительных животных, чувствовать их и строить с ними партнерские отношения.</p>
+                    </div>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="foto/icons/icon-secure.png" alt="Security">
+                            </div>
+                            <h3 class="feature-title">Безопасность</h3>
+                            <p class="feature-text">Современная амуниция, страховка, опытные инструкторы</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="foto/icons/icon-whistle.png" alt="Trainers">
+                            </div>
+                            <h3 class="feature-title">Опытные тренеры</h3>
+                            <p class="feature-text">Профессионалы с педагогическим подходом к каждому ученику</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="foto/icons/icon-horse.png" alt="Horse">
+                            </div>
+                            <h3 class="feature-title">Здоровые лошади</h3>
+                            <p class="feature-text">Ухоженные, дружелюбные лошади, подобранные под разный уровень</p>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <img src="foto/icons/icon-creativity.png" alt="Individual Approach">
+                            </div>
+                            <h3 class="feature-title">Индивидуальный подход</h3>
+                            <p class="feature-text">Программы для детей, взрослых, начинающих и опытных всадников</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши услуги</h2>
+                    <p class="section-subtitle">Выберите подходящую программу для знакомства с миром верховой езды</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Услуга 1 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service1.jpg" alt="Индивидуальное занятие" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Индивидуальное занятие для новичков</h3>
+                            <p class="service-description">Персональный урок с тренером в манеже. Идеально для первого знакомства с лошадью и основами верховой езды.</p>
+                            <div class="service-price">2 500 руб. / 60 мин</div>
+                            <button class="btn btn-primary service-btn" data-service="Индивидуальное занятие">Записаться</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Услуга 2 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service2.jpg" alt="Детская группа" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Групповые занятия для детей</h3>
+                            <p class="service-description">Занятия в группах до 5 человек для детей от 6 лет. Развиваем координацию, уверенность и любовь к животным.</p>
+                            <div class="service-price">1 800 руб. / занятие</div>
+                            <button class="btn btn-primary service-btn" data-service="Детская группа">Записаться</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Услуга 3 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service3.jpg" alt="Конная прогулка" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Конная прогулка по лесу</h3>
+                            <p class="service-description">Прогулка верхом в сопровождении инструктора по живописным лесным тропам. Маршрут 5 км, продолжительность 1,5 часа.</p>
+                            <div class="service-price">3 500 руб. / прогулка</div>
+                            <button class="btn btn-primary service-btn" data-service="Конная прогулка">Записаться</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Услуга 4 -->
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="images/service4.jpg" alt="Иппотерапия" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Курс иппотерапии</h3>
+                            <p class="service-description">Специальные занятия с терапевтическим эффектом для детей и взрослых. Работа с психологом и инструктором.</p>
+                            <div class="service-price">4 000 руб. / занятие</div>
+                            <button class="btn btn-primary service-btn" data-service="Иппотерапия">Консультация</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши лошади -->
+        <section class="horses" id="horses">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши лошади</h2>
+                    <p class="section-subtitle">Знакомьтесь с нашими четвероногими друзьями и учителями</p>
+                </div>
+                
+                <div class="horses-carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel-slide active">
+                                <div class="horse-featured">
+                                    <div class="horse-image">
+                                        <img src="foto/horse/srednii-snimok-scastlivaa-zensina-i-losad-na-otkrytom-vozduhe.jpg" alt="Счастливая женщина и лошадь на открытом воздухе" loading="lazy">
+                                    </div>
+                                    <div class="horse-info">
+                                        <h3 class="horse-name">Звезда</h3>
+                                        <div class="horse-details">
+                                            <span class="horse-breed">Андалузская порода</span>
+                                            <span class="horse-age">6 лет</span>
+                                        </div>
+                                        <p class="horse-description">Спокойная и умная кобыла, идеально подходит для начинающих всадников. Звезда обладает мягким характером и терпеливо относится к новичкам. Любит ласку и внимание.</p>
+                                        <div class="horse-spec">
+                                            <div class="spec-item">
+                                                <span class="spec-label">Рост в холке:</span>
+                                                <span class="spec-value">162 см</span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Характер:</span>
+                                                <span class="spec-value">Спокойная, дружелюбная</span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Специализация:</span>
+                                                <span class="spec-value">Новички, дети, прогулки</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <div class="horse-featured">
+                                    <div class="horse-image">
+                                        <img src="foto/horse/zensina-gulaet-s-losad-u-v-sel-skoi-mestnosti.jpg" alt="Женщина гуляет с лошадью в сельской местности" loading="lazy">
+                                    </div>
+                                    <div class="horse-info">
+                                        <h3 class="horse-name">Бриз</h3>
+                                        <div class="horse-details">
+                                            <span class="horse-breed">Тракененская порода</span>
+                                            <span class="horse-age">8 лет</span>
+                                        </div>
+                                        <p class="horse-description">Энергичный и уверенный жеребец, отлично подходит для опытных всадников. Бриз обладает живым характером и любит активные прогулки. Отлично подходит для конкура.</p>
+                                        <div class="horse-spec">
+                                            <div class="spec-item">
+                                                <span class="spec-label">Рост в холке:</span>
+                                                <span class="spec-value">168 см</span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Характер:</span>
+                                                <span class="spec-value">Энергичный, уверенный</span>
+                                            </div>
+                                            <div class="spec-item">
+                                                <span class="spec-label">Специализация:</span>
+                                                <span class="spec-value">Продвинутые, спорт</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="carousel-btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <div class="carousel-indicators">
+                            <span class="indicator active" data-slide="0"></span>
+                            <span class="indicator" data-slide="1"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наши тренеры -->
+        <section class="trainers" id="trainers">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Наши тренеры</h2>
+                    <p class="section-subtitle">Профессионалы, которые помогут вам освоить искусство верховой езды</p>
+                </div>
+                
+                <div class="trainers-grid">
+                    <!-- Тренер 1 -->
+                    <div class="trainer-card">
+                        <div class="trainer-image">
+                            <img src="images/trainer1.jpg" alt="Анна Сергеевна" loading="lazy">
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Анна Сергеевна</h3>
+                            <div class="trainer-qualification">КМС по выездке, стаж 12 лет</div>
+                            <p class="trainer-description">Специализируется на работе с детьми и начинающими. Автор методики адаптивного обучения.</p>
+                            <div class="trainer-specialization">
+                                <span class="specialization-tag">Дети</span>
+                                <span class="specialization-tag">Новички</span>
+                                <span class="specialization-tag">Выездка</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Тренер 2 -->
+                    <div class="trainer-card">
+                        <div class="trainer-image">
+                            <img src="images/trainer2.jpg" alt="Дмитрий Иванов" loading="lazy">
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Дмитрий Иванов</h3>
+                            <div class="trainer-qualification">Мастер спорта, стаж 18 лет</div>
+                            <p class="trainer-description">Эксперт по конкуру и выездке. Работает со спортсменами, готовит к соревнованиям.</p>
+                            <div class="trainer-specialization">
+                                <span class="specialization-tag">Конкур</span>
+                                <span class="specialization-tag">Спорт</span>
+                                <span class="specialization-tag">Продвинутые</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Тренер 3 -->
+                    <div class="trainer-card">
+                        <div class="trainer-image">
+                            <img src="images/trainer3.jpg" alt="Екатерина Петрова" loading="lazy">
+                        </div>
+                        <div class="trainer-info">
+                            <h3 class="trainer-name">Екатерина Петрова</h3>
+                            <div class="trainer-qualification">Иппотерапевт, стаж 10 лет</div>
+                            <p class="trainer-description">Специалист по иппотерапии и реабилитационной верховой езде. Работает с особыми потребностями.</p>
+                            <div class="trainer-specialization">
+                                <span class="specialization-tag">Иппотерапия</span>
+                                <span class="specialization-tag">Реабилитация</span>
+                                <span class="specialization-tag">Терапия</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Акция -->
+        <section class="promo">
+            <div class="container">
+                <div class="promo-content">
+                    <div class="promo-text">
+                        <h2 class="promo-title">Подарочный сертификат на конную прогулку</h2>
+                        <p class="promo-description">Подарите незабываемые эмоции! Сертификат на романтическую или семейную прогулку верхом по живописному лесу.</p>
+                        <div class="promo-timer" id="promo-timer">
+                            <div class="timer-item">
+                                <span class="timer-value" id="days">05</span>
+                                <span class="timer-label">дней</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-value" id="hours">12</span>
+                                <span class="timer-label">часов</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-value" id="minutes">45</span>
+                                <span class="timer-label">минут</span>
+                            </div>
+                            <div class="timer-item">
+                                <span class="timer-value" id="seconds">30</span>
+                                <span class="timer-label">секунд</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="promo-form">
+                        <h3 class="form-title">Забронировать сертификат со скидкой 20%</h3>
+                        <form id="promo-form" class="signup-form">
+                            <div class="form-group">
+                                <input type="text" id="promo-name" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="promo-phone" name="phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Забронировать со скидкой</button>
+                        </form>
+                        <p class="form-note">Менеджер свяжется с вами в течение 30 минут для уточнения деталей</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Отзывы наших клиентов</h2>
+                    <p class="section-subtitle">Истории людей, которые открыли для себя мир верховой езды</p>
+                </div>
+                
+                <div class="reviews-slider">
+                    <!-- Отзыв 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="images/avatar1.jpg" alt="Мария" loading="lazy">
+                            </div>
+                            <div class="review-author">
+                                <h4 class="author-name">Мария</h4>
+                                <div class="author-info">Начала заниматься 3 месяца назад</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>Привела дочку 8 лет на занятия, а в итоге сама записалась! Атмосфера в клубе потрясающая, лошади ухоженные и добрые. Тренер Анна Сергеевна нашла подход и ко мне, и к ребенку. Теперь это наше семейное хобби!</p>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="images/avatar2.jpg" alt="Алексей" loading="lazy">
+                            </div>
+                            <div class="review-author">
+                                <h4 class="author-name">Алексей</h4>
+                                <div class="author-info">Конные прогулки 2 раза в месяц</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>Искал необычный подарок жене на годовщину. Заказал сертификат на конную прогулку. Оба в восторге! Маршрут по лесу невероятно красивый, инструктор все подробно объяснил. Обязательно вернемся!</p>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Отзыв 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <img src="images/avatar3.jpg" alt="Ольга" loading="lazy">
+                            </div>
+                            <div class="review-author">
+                                <h4 class="author-name">Ольга</h4>
+                                <div class="author-info">Иппотерапия для сына, 6 лет</div>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>Водим сына на иппотерапию 2 месяца. У ребенка ДЦП, и прогресс заметен невооруженным глазом! Спасибо тренеру Екатерине за профессионализм и терпение. Лошадь Буян — просто ангел, сын его обожает.</p>
+                        </div>
+                        <div class="review-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="contacts-content">
+                    <div class="contacts-info">
+                        <h2 class="section-title">Как нас найти</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="foto/icons/icon-location.png" alt="Location">
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Адрес</h3>
+                                    <p>Московская область, Ленинский район,<br>пос. Лесной, Конюшенная ул., 15</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="foto/icons/icon-phone.png" alt="Phone">
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Телефон</h3>
+                                    <p><a href="tel:+78005553535">8 (800) 555-35-35</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="foto/icons/icon-email.png" alt="Email">
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:info@equilibrium-club.ru">info@equilibrium-club.ru</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <img src="foto/icons/icon-time.png" alt="Time">
+                                </div>
+                                <div class="contact-text">
+                                    <h3>График работы</h3>
+                                    <p>Ежедневно с 9:00 до 20:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-rules">
+                            <h3>Правила посещения:</h3>
+                            <ul>
+                                <li>Удобная одежда и обувь без каблуков</li>
+                                <li>Запись на занятия обязательна</li>
+                                <li>Дети до 14 лет — только в сопровождении взрослых</li>
+                                <li>Все необходимые средства защиты предоставляем</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="contacts-map">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи (модальное окно) -->
+        <div class="modal" id="signup-modal">
+            <div class="modal-overlay" id="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <h2 class="modal-title">Запись на занятие</h2>
+                <p class="modal-subtitle">Заполните форму, и мы свяжемся с вами для уточнения деталей</p>
+                
+                <form id="signup-form" class="signup-form">
+                    <div class="form-group">
+                        <input type="text" id="signup-name" name="name" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="signup-phone" name="phone" placeholder="Ваш телефон" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="signup-service" name="service" required>
+                            <option value="" disabled selected>Выберите услугу</option>
+                            <option value="Индивидуальное занятие">Индивидуальное занятие для новичков</option>
+                            <option value="Детская группа">Групповые занятия для детей</option>
+                            <option value="Конная прогулка">Конная прогулка по лесу</option>
+                            <option value="Иппотерапия">Курс иппотерапии</option>
+                            <option value="Консультация">Консультация / Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="signup-date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="signup-message" name="message" placeholder="Ваши пожелания или вопросы" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                </form>
+                
+                <p class="form-note">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="footer-title">Конный клуб</h3>
+                    <p class="footer-slogan">Гармония человека и лошади</p>
+                </div>
+                
+                <div class="footer-contacts">
+                    <h3 class="footer-title">Контакты</h3>
+                    <a href="tel:+78005553535" class="footer-phone">8 (800) 555-35-35</a>
+                    <p class="footer-address">Московская обл., пос. Лесной, Конюшенная ул., 15</p>
+                </div>
+                
+                <div class="footer-social">
+                    <h3 class="footer-title">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><img src="foto/icons/icon-vk.png" alt="VK"></a>
+                        <a href="#" class="social-link"><img src="foto/icons/icon-whatsapp.png" alt="WhatsApp"></a>
+                        <a href="#" class="social-link"><img src="foto/icons/icon-telegram.png" alt="Telegram"></a>
+                        <a href="#" class="social-link"><img src="foto/icons/icon-secure.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <h3 class="footer-title">Навигация</h3>
+                    <ul class="footer-nav-list">
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#horses">Наши лошади</a></li>
+                        <li><a href="#trainers">Тренеры</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Конный клуб EquiLibrium. Все права защищены.</p>
+                <a href="#" class="footer-link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- Для карты (Яндекс или Google) -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=demo&lang=ru_RU" type="text/javascript"></script>
+</body>
+</html>
