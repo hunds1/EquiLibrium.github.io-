@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+Ё<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -13,7 +13,8 @@
     <!-- Шапка сайта -->
     <header class="header" id="header">
         <div class="container">
-            <div class="header-inner">
+            <!-- Первая строка: логотип слева, контакты справа -->
+            <div class="header-top-row">
                 <!-- Логотип -->
                 <a href="/" class="logo">
                     <img src="foto/logo_1.png" alt="EquiLibrium Logo" class="logo-img">
@@ -22,19 +23,6 @@
                         <span class="logo-subtitle">Конный клуб</span>
                     </div>
                 </a>
-
-                <!-- Навигация -->
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active">Главная</a></li>
-                        <li><a href="#about" class="nav-link">О нас</a></li>
-                        <li><a href="#services" class="nav-link">Услуги</a></li>
-                        <li><a href="#horses" class="nav-link">Наши лошади</a></li>
-                        <li><a href="#trainers" class="nav-link">Тренеры</a></li>
-                        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
-                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
-                    </ul>
-                </nav>
 
                 <!-- Контакты в шапке -->
                 <div class="header-contacts">
@@ -51,6 +39,22 @@
                     <span></span>
                     <span></span>
                 </button>
+            </div>
+
+            <!-- Вторая строка: навигация -->
+            <div class="header-bottom-row">
+                <!-- Навигация -->
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Главная</a></li>
+                        <li><a href="#about" class="nav-link">О нас</a></li>
+                        <li><a href="#services" class="nav-link">Услуги</a></li>
+                        <li><a href="#horses" class="nav-link">Наши лошади</a></li>
+                        <li><a href="#trainers" class="nav-link">Тренеры</a></li>
+                        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -134,7 +138,7 @@
                     <!-- Услуга 1 -->
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="images/service1.jpg" alt="Индивидуальное занятие" loading="lazy">
+                            <img src="foto/services/Индивидуальное занятие для новичков.jpg" alt="Индивидуальное занятие" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Индивидуальное занятие для новичков</h3>
@@ -147,7 +151,7 @@
                     <!-- Услуга 2 -->
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="images/service2.jpg" alt="Детская группа" loading="lazy">
+                            <img src="foto/services/Групповые занятия для детей.jpg" alt="Детская группа" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Групповые занятия для детей</h3>
@@ -160,26 +164,13 @@
                     <!-- Услуга 3 -->
                     <div class="service-card">
                         <div class="service-image">
-                            <img src="images/service3.jpg" alt="Конная прогулка" loading="lazy">
+                            <img src="foto/services/Конная прогулка по лесу.jpg" alt="Конная прогулка" loading="lazy">
                         </div>
                         <div class="service-content">
                             <h3 class="service-title">Конная прогулка по лесу</h3>
                             <p class="service-description">Прогулка верхом в сопровождении инструктора по живописным лесным тропам. Маршрут 5 км, продолжительность 1,5 часа.</p>
                             <div class="service-price">3 500 руб. / прогулка</div>
                             <button class="btn btn-primary service-btn" data-service="Конная прогулка">Записаться</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Услуга 4 -->
-                    <div class="service-card">
-                        <div class="service-image">
-                            <img src="images/service4.jpg" alt="Иппотерапия" loading="lazy">
-                        </div>
-                        <div class="service-content">
-                            <h3 class="service-title">Курс иппотерапии</h3>
-                            <p class="service-description">Специальные занятия с терапевтическим эффектом для детей и взрослых. Работа с психологом и инструктором.</p>
-                            <div class="service-price">4 000 руб. / занятие</div>
-                            <button class="btn btn-primary service-btn" data-service="Иппотерапия">Консультация</button>
                         </div>
                     </div>
                 </div>
@@ -196,6 +187,7 @@
                 
                 <div class="horses-carousel">
                     <div class="carousel-container">
+                        <button class="carousel-btn prev-btn"><</button>
                         <div class="carousel-wrapper">
                             <div class="carousel-slide active">
                                 <div class="horse-featured">
@@ -257,13 +249,7 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <button class="carousel-btn prev-btn">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="carousel-btn next-btn">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+                        <button class="carousel-btn next-btn">></button>
                         
                         <div class="carousel-indicators">
                             <span class="indicator active" data-slide="0"></span>
@@ -286,7 +272,7 @@
                     <!-- Тренер 1 -->
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="images/trainer1.jpg" alt="Анна Сергеевна" loading="lazy">
+                            <img src="foto/a/Анна Сергеевна.jpg" alt="Анна Сергеевна" loading="lazy">
                         </div>
                         <div class="trainer-info">
                             <h3 class="trainer-name">Анна Сергеевна</h3>
@@ -303,7 +289,7 @@
                     <!-- Тренер 2 -->
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="images/trainer2.jpg" alt="Дмитрий Иванов" loading="lazy">
+                            <img src="foto/a/Дмитрий Иванов.jpg" alt="Дмитрий Иванов" loading="lazy">
                         </div>
                         <div class="trainer-info">
                             <h3 class="trainer-name">Дмитрий Иванов</h3>
@@ -320,7 +306,7 @@
                     <!-- Тренер 3 -->
                     <div class="trainer-card">
                         <div class="trainer-image">
-                            <img src="images/trainer3.jpg" alt="Екатерина Петрова" loading="lazy">
+                            <img src="foto/a/Екатерина Петрова.jpg" alt="Екатерина Петрова" loading="lazy">
                         </div>
                         <div class="trainer-info">
                             <h3 class="trainer-name">Екатерина Петрова</h3>
@@ -394,15 +380,15 @@
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">
-                                <img src="images/avatar1.jpg" alt="Мария" loading="lazy">
+                                <img src="foto/feedback/отзыв_1.jpg" alt="Иван" loading="lazy">
                             </div>
                             <div class="review-author">
-                                <h4 class="author-name">Мария</h4>
-                                <div class="author-info">Начала заниматься 3 месяца назад</div>
+                                <h4 class="author-name">Иван</h4>
+                                <div class="author-info">Занимается верховой ездой 6 месяцев</div>
                             </div>
                         </div>
                         <div class="review-text">
-                            <p>Привела дочку 8 лет на занятия, а в итоге сама записалась! Атмосфера в клубе потрясающая, лошади ухоженные и добрые. Тренер Анна Сергеевна нашла подход и ко мне, и к ребенку. Теперь это наше семейное хобби!</p>
+                            <p>Отличный клуб! Прекрасные тренеры и ухоженные лошади. Занимаюсь уже полгода, прогресс налицо. Атмосфера в клубе располагает к обучению. Рекомендую всем, кто хочет освоить верховую езду!</p>
                         </div>
                         <div class="review-rating">
                             <i class="fas fa-star"></i>
@@ -417,7 +403,7 @@
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">
-                                <img src="images/avatar2.jpg" alt="Алексей" loading="lazy">
+                                <img src="foto/feedback/отзыв_2.jpg" alt="Алексей" loading="lazy">
                             </div>
                             <div class="review-author">
                                 <h4 class="author-name">Алексей</h4>
@@ -440,15 +426,15 @@
                     <div class="review-card">
                         <div class="review-header">
                             <div class="review-avatar">
-                                <img src="images/avatar3.jpg" alt="Ольга" loading="lazy">
+                                <img src="foto/feedback/отзыв_3.jpg" alt="Дмитрий" loading="lazy">
                             </div>
                             <div class="review-author">
-                                <h4 class="author-name">Ольга</h4>
-                                <div class="author-info">Иппотерапия для сына, 6 лет</div>
+                                <h4 class="author-name">Дмитрий</h4>
+                                <div class="author-info">Участие в соревнованиях по конкуру</div>
                             </div>
                         </div>
                         <div class="review-text">
-                            <p>Водим сына на иппотерапию 2 месяца. У ребенка ДЦП, и прогресс заметен невооруженным глазом! Спасибо тренеру Екатерине за профессионализм и терпение. Лошадь Буян — просто ангел, сын его обожает.</p>
+                            <p>Тренируюсь в клубе уже 2 года. Отличная подготовка к соревнованиям! Профессиональные тренеры, отличные лошади. Участвовал в нескольких турнирах и занял призовые места. Спасибо за ваш труд и профессионализм!</p>
                         </div>
                         <div class="review-rating">
                             <i class="fas fa-star"></i>
@@ -561,8 +547,6 @@
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
                 </form>
-                
-                <p class="form-note">Нажимая на кнопку, вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
             </div>
         </div>
     </main>
@@ -588,7 +572,6 @@
                         <a href="#" class="social-link"><img src="foto/icons/icon-vk.png" alt="VK"></a>
                         <a href="#" class="social-link"><img src="foto/icons/icon-whatsapp.png" alt="WhatsApp"></a>
                         <a href="#" class="social-link"><img src="foto/icons/icon-telegram.png" alt="Telegram"></a>
-                        <a href="#" class="social-link"><img src="foto/icons/icon-secure.png" alt="Instagram"></a>
                     </div>
                 </div>
                 

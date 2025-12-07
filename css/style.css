@@ -100,8 +100,7 @@ ul {
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
+    border: 2px solid white;
 }
 
 .btn-secondary:hover {
@@ -133,7 +132,7 @@ ul {
     font-family: var(--font-secondary);
     font-size: 2.5rem;
     color: var(--color-dark);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     position: relative;
     display: inline-block;
 }
@@ -156,13 +155,10 @@ ul {
     margin: 0 auto;
 }
 
-.highlight {
-    color: var(--color-primary);
-}
 
 /* ==========================================================================
-   Шапка
-   ========================================================================== */
+    Шапка
+    ========================================================================== */
 .header {
     position: fixed;
     top: 0;
@@ -171,19 +167,26 @@ ul {
     background-color: var(--color-white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 15px 0;
     transition: all 0.3s ease;
 }
 
 .header.scrolled {
-    padding: 10px 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
 }
 
-.header-inner {
+/* Первая строка шапки */
+.header-top-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
+    flex-wrap: nowrap;
+}
+
+/* Вторая строка шапки */
+.header-bottom-row {
+    border-top: 1px solid var(--color-gray-light);
+    padding: 15px 0;
 }
 
 .logo {
@@ -195,7 +198,6 @@ ul {
 .logo-img {
     height: 50px;
     width: auto;
-    margin-right: 10px;
 }
 
 .logo-text {
@@ -218,7 +220,9 @@ ul {
 
 .nav-list {
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .nav-link {
@@ -252,7 +256,8 @@ ul {
 .header-contacts {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    flex-shrink: 0;
 }
 
 .phone-link {
@@ -292,16 +297,16 @@ ul {
 }
 
 /* ==========================================================================
-   Герой-секция
-   ========================================================================== */
+    Герой-секция
+    ========================================================================== */
 .hero {
     padding: 180px 0 120px;
-    background: linear-gradient(rgba(43, 35, 30, 0.7), rgba(43, 35, 30, 0.7)), 
-                url('../images/hero-bg.jpg') no-repeat center center;
+    background: linear-gradient(rgba(85, 107, 47, 0.8), rgba(85, 107, 47, 0.8)),
+                url('../foto/291ebe6e6ed632a5d44e87a9ec079af0.jpg') no-repeat center center;
     background-size: cover;
     color: var(--color-white);
     text-align: center;
-    margin-top: 80px;
+    margin-top: 140px;
 }
 
 .hero-content {
@@ -334,7 +339,7 @@ ul {
    ========================================================================== */
 .about {
     padding: var(--section-padding);
-    background-color: var(--color-light);
+    background-color: #e6f0e6; /* Light green background */
 }
 
 .about-content {
@@ -370,16 +375,21 @@ ul {
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    background-color: var(--color-primary);
+    width: 80px;
+    /* background-color: var(--color-primary); - Remove brown circle */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
     color: var(--color-white);
-    font-size: 1.5rem;
+    font-size: 2rem;
+}
+
+.feature-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .feature-title {
@@ -480,6 +490,7 @@ ul {
 .carousel-container {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .carousel-wrapper {
@@ -585,10 +596,6 @@ ul {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
-}
-
-.horse-image {
-    height: 400px;
 }
 
 .horse-image img {
@@ -799,11 +806,25 @@ ul {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 5px;
+    transition: all 0.3s ease;
+    animation: pulse 1s infinite;
 }
 
 .timer-label {
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .promo-form {
@@ -878,10 +899,11 @@ ul {
 
 .review-card {
     background-color: var(--color-white);
-    padding: 30px;
+    padding: 30px 30px 30px 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
+    position: relative;
 }
 
 .review-card:hover {
@@ -890,7 +912,6 @@ ul {
 }
 
 .review-header {
-    display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
@@ -940,7 +961,7 @@ ul {
 
 .contacts-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr; /* Make map area larger */
     gap: 60px;
 }
 
@@ -1004,7 +1025,7 @@ ul {
 }
 
 .contacts-map {
-    height: 500px;
+    
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -1013,6 +1034,25 @@ ul {
 #map {
     width: 100%;
     height: 100%;
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.contact-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 /* ==========================================================================
@@ -1263,13 +1303,21 @@ ul {
         padding: 10px 0;
     }
     
+    .header-top-row {
+        padding: 10px 0;
+    }
+    
+    .header-bottom-row {
+        padding: 10px 0;
+    }
+    
     .mobile-menu-btn {
         display: flex;
     }
     
     .nav {
         position: fixed;
-        top: 80px;
+        top: 100px;
         left: 0;
         width: 100%;
         background-color: var(--color-white);
@@ -1493,34 +1541,9 @@ ul {
 .review-avatar,
 #map {
     background-color: var(--color-gray-light);
-    display: flex;
     align-items: center;
-    justify-content: center;
     color: var(--color-gray);
     font-size: 0.9rem;
-}
-
-.service-image::before {
-    content: 'Изображение услуги';
-}
-
-.horse-image::before {
-    content: 'Фото лошади';
-}
-
-.trainer-image::before {
-    content: 'Фото тренера';
-}
-
-.review-avatar::before {
-    content: 'Аватар';
-    font-size: 0.7rem;
-}
-
-#map::before {
-    content: 'Карта Яндекс/Google';
-    text-align: center;
-    padding: 20px;
 }
 /* Icon styles for feature section */
 .feature-icon img {
